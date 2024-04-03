@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Countries</title>
+  </head>
+  <body>
+    <div class="error"><p>This Country Doesn't Exist</p></div>
+    <header>
+      <nav>
+        <h3>Where in the world?</h3>
+        <div class="color-mode">
+          <div class="icons">
+            <i class="far fa-moon"></i> <i class="fas fa-moon"></i>
+          </div>
+          <p>Dark Mode</p>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <section class="filters">
+        <form action="#" id="search-form" class="search-form">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            id="country-name"
+            placeholder="Search for a country..."
+          />
+        </form>
+
+        <div class="select-filter">
+          <div class="filter-header">
+            <p>Filter by Region</p>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="space-between"></div>
+          <ul class="regions">
+            <li>
+              <p>Africa</p>
+              <div class="border-bottom"></div>
+            </li>
+            <li>
+              <p>America</p>
+              <div class="border-bottom"></div>
+            </li>
+            <li>
+              <p>Asia</p>
+              <div class="border-bottom"></div>
+            </li>
+            <li>
+              <p>Europe</p>
+              <div class="border-bottom"></div>
+            </li>
+            <li>
+              <p>Oceania</p>
+              <div class="border-bottom"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="countries"></section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
